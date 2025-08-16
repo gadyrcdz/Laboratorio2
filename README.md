@@ -3,8 +3,8 @@ Sitio web estático sobre el evento tecnológico de alto cilindraje, seguridad y
 
 ---
 
-## 1. 🎯 Título y Descripción
-Super Motos Tech 2025 — Evento tecnológico enfocado en super motos y alto rendimiento.  
+## 1. 🎯 Descripción
+Super Motos Tech 2025 — Evento enfocado en super motos y alto rendimiento.  
 El sitio incluye agenda, expositores, formulario de registro, ubicación y patrocinadores.
 
 ---
@@ -26,15 +26,17 @@ El sitio incluye agenda, expositores, formulario de registro, ubicación y patro
 ---
 
 ## 4. ✅ Validación W3C
-En general, el resultado que me generó la validación mayormente algo informativo, sin errores.
-![alt text](image-1.png)
+En general, el resultado que me generó la validación fue mayormente algo informativo, sin errores.
+![alt text](assets/image-1.png)
 
-Lo informativo que me dio fue para realizar el cambio y no utilizar el "(/)" al final ya que el  "(/)" en elementos vacíos (void elements) como "meta", "br", "img", "input" no tiene ningún efecto en HTML5, y a veces puede dar problemas si además se llega a utilizar atributos sin comillas.
+Los warnings informativos que me dio fue para realizar el cambio y no utilizar el "(/)" al final ya que el  "(/)" en elementos vacíos (void elements) como "meta", "br", "img", "input" no tiene ningún efecto en HTML5, y a veces puede dar problemas si además se llega a utilizar atributos sin comillas.
+Luego de realizar los cambios que la página recomienda, y volver a realizar el análisis, este es el resultado.
+![alt text](assets/image-2.png)
 
 ---
 
 ## 5. 🌟 Resultados Lighthouse
-![alt text](image.png)
+![alt text](assets/image.png)
 
 ---
 
