@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Super Motos Tech 2025</title>
+  <meta name="description" content="Evento tecnológico enfocado en super motos y alto rendimiento." />
+  <style>
+    /* Estilos sencillos para que se vea ordenado, sin nada extraordinario */
+    :root { --max: 1000px; }
+    body { font-family: system-ui, Arial, sans-serif; line-height: 1.45; margin: 0; }
+    header, main, footer { max-width: var(--max); margin: 0 auto; padding: 1rem; }
+    header { background: #111; color: #fff; }
+    header h1 { margin: .5rem 0; font-size: 1.8rem; }
+    nav ul { list-style: none; padding: 0; margin: .5rem 0 1rem; display: flex; gap: .75rem; flex-wrap: wrap; }
+    nav a { color: #fff; text-decoration: none; padding: .25rem .5rem; border: 1px solid #444; border-radius: 4px; }
+    nav a:hover, nav a:focus { outline: none; background: #222; }
+    figure { margin: 0; }
+    figure img { width: 100%; height: auto; display: block; border-radius: 6px; }
+    figcaption { font-size: .9rem; color: #ddd; margin-top: .25rem; }
+
+    section { padding: 1rem; border-bottom: 1px solid #eee; }
+    section h2 { margin-top: 0; }
+
+    table { width: 100%; border-collapse: collapse; margin: .5rem 0 1rem; }
+    thead th { background: #f3f3f3; }
+    th, td { border: 1px solid #ddd; padding: .5rem; text-align: left; }
+
+    blockquote { border-left: 4px solid #999; padding-left: .75rem; color: #333; margin: 1rem 0; font-style: italic; }
+
+    article { display: grid; grid-template-columns: 160px 1fr; gap: .75rem; align-items: start; margin: 1rem 0; }
+    article img { width: 100%; height: auto; border-radius: 6px; }
+
+    form { display: grid; gap: .5rem; max-width: 520px; }
+    input, select, button { padding: .5rem; font-size: 1rem; }
+    fieldset { border: 1px solid #ccc; border-radius: 6px; padding: .5rem .75rem; }
+    legend { padding: 0 .25rem; }
+    button[type="submit"] { cursor: pointer; }
+
+    aside { background: #fafafa; border: 1px solid #eee; padding: .75rem; border-radius: 6px; margin: 1rem 0; }
+
+    footer { font-size: .95rem; color: #333; }
+    footer a { color: inherit; }
+
+    /* Enlace para saltar al contenido principal (visible al enfocar con teclado) */
+    .skip-link { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+    .skip-link:focus { position: static; width: auto; height: auto; padding: .25rem .5rem; background: #ffd; border: 1px solid #cc0; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Ir al contenido principal</a>
+
+  <header id="inicio">
+    <h1>Super Motos Tech 2025</h1>
+    <p>Encuentro tech sobre super motos (alto cilindraje), rendimiento y seguridad.</p>
+
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#expositores">Expositores</a></li>
+        <li><a href="#registro">Registro</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#patrocinadores">Patrocinadores</a></li>
+      </ul>
+    </nav>
+
+    <figure>
+      <img src="https://images.unsplash.com/photo-1650355981320-21a9f8dcb776?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Moto de alta cilindrada tomando una curva en pista" tabindex="0" />
+      <figcaption>Sesión de prueba en pista durante el evento.</figcaption>
+    </figure>
+  </header>
+
+  <main id="contenido">
+    <!-- Sección 1: Agenda -->
+    <section id="agenda">
+      <h2>Agenda</h2>
+      <p>Resumen de actividades del día.</p>
+
+      <table aria-label="Mini agenda del evento">
+        <thead>
+          <tr>
+            <th scope="col">Hora</th>
+            <th scope="col">Actividad</th>
+            <th scope="col">Sala</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>09:00</td>
+            <td>Acreditación y bienvenida</td>
+            <td>Hall A</td>
+          </tr>
+          <tr>
+            <td>10:00</td>
+            <td>Charla: Electrónica en superbikes</td>
+            <td>Auditorio 1</td>
+          </tr>
+          <tr>
+            <td>12:00</td>
+            <td>Panel de seguridad en pista</td>
+            <td>Auditorio 2</td>
+          </tr>
+          <tr>
+            <td>15:00</td>
+            <td>Demostración de frenado ABS</td>
+            <td>Pista</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <ul>
+        <li>Equipos de exhibición: motos 600cc, 1000cc y 1200cc.</li>
+        <li>Zona de stands con accesorios y software de telemetría.</li>
+        <li>Espacio para networking con equipos y marcas.</li>
+      </ul>
+
+      <blockquote>
+        «La confianza viene de conocer tu máquina y respetar sus límites.»
+        <cite> — Piloto invitado</cite>
+      </blockquote>
+
+      <img src="https://i.blogs.es/01eccf/museo-yamaha-amsterdam-2-/1366_2000.jpg" alt="Zona de stands con cascos y piezas de moto" />
+    </section>
+
+    <!-- Sección 2: Expositores -->
+    <section id="expositores">
+      <h2>Expositores</h2>
+
+      <article>
+        <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcSwZRwUM2Bu3oNmMApgxtFPtLFBSSUlOniKYHqq1bSVU23j4Bx-tKboDvem2a2dwGaHOrgeQuHm1FTa-zs" alt="Retrato de Luca Marmorini" tabindex="-1" />
+        <div>
+          <h3>Luca Marmorini — Jefe de departamento</h3>
+          <p>Jefe del departamento de motores y electrónica de Ferrari.</p>
+        </div>
+      </article>
+
+      <article>
+        <img src="https://img.asmedia.epimg.net/resizer/v2/7OP2B6WTEJNJDOYRWWNAPFJED4.jpg?auth=371395788d12df035446560296a4ec2d580a9f7ea482e5161dc079cf111cb72c&width=1288&height=725&smart=true" alt="Lin Jarvis director general en Yamaha" />
+        <div>
+          <h3>Lin Jarvis — Director General en Yamaha</h3>
+          <p>Fue el director general en Yamaha tras 26 años..</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Sección 3: Registro -->
+    <section id="registro">
+      <h2>Registro</h2>
+      <p>Completa el formulario para apartar tu lugar.</p>
+
+      <form action="#" method="post" aria-labelledby="titulo-registro">
+        <h3 id="titulo-registro">Formulario de registro</h3>
+
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required aria-required="true" />
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" required aria-required="true" />
+
+        <fieldset>
+          <legend>Tipo de pase</legend>
+          <label><input type="radio" name="pase" value="general" required /> General</label>
+          <label><input type="radio" name="pase" value="paddock" /> Paddock</label>
+          <label><input type="radio" name="pase" value="vip" /> VIP</label>
+        </fieldset>
+
+        <label for="cilindraje">Cilindraje de interés</label>
+        <select id="cilindraje" name="cilindraje">
+          <option value="600cc">600 cc</option>
+          <option value="1000cc">1000 cc</option>
+          <option value="1200cc">1200+ cc</option>
+        </select>
+
+        <button type="submit" aria-label="Enviar registro del evento Super Motos">Enviar</button>
+      </form>
+
+      <h3>Pasos para registrarte</h3>
+      <ol>
+        <li>Revisa el reglamento de seguridad.</li>
+        <li>Completa el formulario y elige tu pase.</li>
+        <li>Confirma tu registro desde el correo.</li>
+      </ol>
+
+      <p>
+        Consulta una guía general sobre <a href="https://www.galgo.com/blog/motos/motos-de-alto-cilindraje" target="_blank" rel="noopener noreferrer">motos deportivas</a> para prepararte.
+      </p>
+    </section>
+
+    <!-- Sección 4: Ubicación -->
+    <section id="ubicacion">
+      <h2>Ubicación</h2>
+      <p>Centro de Convenciones — San José, Costa Rica. 20 de septiembre de 2025.</p>
+
+      <aside>
+        <h3>Consejos rápidos</h3>
+        <ul>
+          <li>Trae protección auditiva y guantes.</li>
+          <li>Hidrátate y usa bloqueador.</li>
+          <li>Zapatos cerrados y ropa cómoda.</li>
+        </ul>
+      </aside>
+
+      <img src="https://centennialtwr.com/wp-content/uploads/2024/04/DAS-12.-Centro-de-Convenciones-CR.jpg" alt="Mapa ilustrativo de la ubicación del evento en San José" />
+    </section>
+
+    <!-- Sección 5: Patrocinadores -->
+    <section id="patrocinadores">
+      <h2>Patrocinadores</h2>
+      <p>Marcas aliadas y colaboradores:</p>
+      <ul>
+        <li>Dorsal Oil</li>
+        <li>Racing Tires Pro</li>
+        <li>Red Bull Racing</li>
+      </ul>
+
+      <div aria-label="Logos de patrocinadores">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfMlgfoQ0BScDxPlV0IZd533yyaiROf-nZ5Q&s" alt="Logo de Dorsal Oil" />
+        <img src="https://images.seeklogo.com/logo-png/40/1/red-bull-racing-f1-logo-png_seeklogo-406796.png" alt="Logo de Red Bull Racing" />
+      </div>
+
+      <p>
+        Más contexto en el <a href="https://www.motogp.com/es" target="_blank" rel="noopener noreferrer">MotosGP, Competencia: Superbike</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Super Motos Tech — <a href="#inicio">Volver arriba</a></p>
+  </footer>
+</body>
+</html>
