@@ -7,8 +7,8 @@ footer {
 }
 
 header {
-  background: linear-gradient(135deg, var(--c-dark) 0%, #333 100%);
-  color: var(--c-light);
+  background: white;
+  color: var(--c-dark);
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -18,13 +18,13 @@ header h1 {
   font-size: 2.2rem;
   font-weight: 700;
   margin: 1rem 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: var(--c-dark);
 }
 
 header p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
-  opacity: 0.9;
+  color: var(--c-muted);
 }
 
 
