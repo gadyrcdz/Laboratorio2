@@ -1,0 +1,58 @@
+/* =========================
+   Layout
+   Combinadores, flex, grid
+========================= */
+
+header,
+main,
+footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Descendiente: párrafos dentro de card */
+.card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Hijo directo */
+header > nav {
+  margin: 1rem 0;
+}
+
+/* Adyacente: enlaces en nav */
+nav a + a {
+  margin-left: .5rem;
+}
+
+/* Hermanos: tags simuladas */
+.tag ~ .tag {
+  margin-left: .25rem;
+}
+
+/* Flex en el nav */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  padding: .25rem .5rem;
+  border: 1px solid #444;
+  border-radius: var(--radius);
+  background: var(--c-dark);
+}
+
+/* Grid para las tarjetas de patrocinadores */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}

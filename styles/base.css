@@ -1,0 +1,39 @@
+/* =========================
+   Base styles
+   Reset + Variables + Box sizing
+========================= */
+
+/* Variables globales */
+:root {
+  --c-accent: #e60023;
+  --c-dark: #111;
+  --c-light: #f3f3f3;
+  --max-width: 1000px;
+  --radius: 6px;
+}
+
+/* Reset ligero */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

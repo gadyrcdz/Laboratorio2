@@ -1,0 +1,71 @@
+/* =========================
+   Components
+========================= */
+
+.btn {
+  border: 1px solid #444;
+  border-radius: var(--radius);
+  padding: .35rem .65rem;
+  background: var(--c-dark);
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+/* Pseudo-clases de estado */
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--c-accent);
+}
+
+/* Tarjetas */
+.card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: var(--radius);
+  position: relative; /* para posicionar absolute adentro */
+  background: #fff;
+  margin-bottom: 1rem;
+}
+
+/* Badge posicionado */
+.badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: var(--c-accent);
+  color: #fff;
+  font-size: 0.75rem;
+  padding: .2rem .5rem;
+  border-radius: 999px;
+}
+
+/* Overflow control */
+.card p {
+  max-height: 100px;
+  overflow: auto;
+}
+
+/* Pseudo-clases estructurales */
+ul li:first-child {
+  font-weight: bold;
+}
+
+ul li:last-child {
+  color: #555;
+}
+
+ul li:nth-child(2n) {
+  background: #f9f9f9;
+}
+
+ul li:not([data-tipo]) {
+  border-left: 2px solid transparent;
+}
