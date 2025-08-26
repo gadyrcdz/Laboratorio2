@@ -106,12 +106,12 @@ nav a:hover {
 }
 
 #patrocinadores .cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 #patrocinadores .cards-container img {
@@ -119,6 +119,8 @@ nav a:hover {
   width: auto;
   filter: grayscale(100%);
   transition: filter 0.3s ease, transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
 }
 
 #patrocinadores .cards-container img:hover {
