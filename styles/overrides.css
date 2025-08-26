@@ -3,18 +3,33 @@
   color: yellow !important;
 }
 
-header nav .btn,
+/* Estilos específicos para botones de navegación */
+header nav ul li a.btn,
+header nav a.btn,
 nav ul li a.btn,
 a.btn {
   background: linear-gradient(135deg, #444 0%, #222 100%) !important;
   color: var(--c-light) !important;
   border: 1px solid #555 !important;
+  text-decoration: none !important;
 }
 
-header nav .btn:hover,
+header nav ul li a.btn:hover,
+header nav a.btn:hover,
 nav ul li a.btn:hover,
 a.btn:hover {
   background: linear-gradient(135deg, #555 0%, #333 100%) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Asegurar que no haya estilos que sobrescriban los botones */
+header nav ul li a.btn:visited,
+header nav a.btn:visited,
+nav ul li a.btn:visited,
+a.btn:visited {
+  background: linear-gradient(135deg, #444 0%, #222 100%) !important;
+  color: var(--c-light) !important;
 }
 
 .skip-link {
