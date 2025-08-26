@@ -81,20 +81,21 @@ nav ul {
 }
 
 nav a {
-  color: #fff;
+  color: var(--c-dark);
   padding: .75rem 1.5rem;
   border: 1px solid #555;
   border-radius: var(--radius);
-  background: linear-gradient(135deg, var(--c-dark) 0%, #333 100%);
+  background: white;
   transition: all 0.3s ease;
   font-weight: 500;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
 }
 
 nav a:hover {
-  background: linear-gradient(135deg, #333 0%, #555 100%);
+  background: #f8f9fa;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 #expositores .cards-container {
