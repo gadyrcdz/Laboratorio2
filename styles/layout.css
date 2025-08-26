@@ -1,43 +1,25 @@
-/* Estructura general */
-header, main, footer {
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-header {
-  background: var(--c-dark);
-  color: var(--c-light);
-}
-
-header h1 {
-  margin: .5rem 0;
-  font-size: 1.8rem;
-}
-
+/* Secciones con un poco más de aire */
 section {
-  padding: 1rem;
+  padding: 1.5rem;
   border-bottom: 1px solid #eee;
   background: var(--c-light);
   border-radius: var(--radius);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
 
-section h2 {
-  margin-top: 0;
+/* Imágenes generales más contenidas */
+figure img,
+section img {
+  max-width: 90%;
+  margin: 0 auto;
+  display: block;
+  border-radius: var(--radius);
 }
 
-/* Nav con flex */
-header > nav ul {
-  list-style: none;
-  padding: 0;
-  margin: .5rem 0 1rem;
-  display: flex;
-  gap: .75rem;
-  flex-wrap: wrap;
-}
-
-/* Adyacente: separación entre enlaces */
-nav a + a {
-  margin-left: .25rem;
+/* Expositores en 2 columnas */
+#expositores {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
 }

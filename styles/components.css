@@ -1,112 +1,50 @@
-/* Botones */
-.btn {
-  color: var(--c-light);
-  background: transparent;
-  border: 1px solid #444;
-  padding: .35rem .6rem;
-  border-radius: var(--radius);
-  font-size: .95rem;
-  transition: background 0.2s;
-}
-
-.btn:hover {
-  background: #222;
-}
-
-.btn:focus-visible {
-  outline: 2px solid #cc0;
-}
-
-.btn:active {
-  background: #333;
-}
-
-/* Card */
+/* Cards de expositores */
 .card {
   border: 1px solid var(--c-border);
   border-radius: var(--radius);
   padding: 1rem;
-  margin-bottom: 1rem;
   background: var(--c-light);
-  position: relative; /* Para el badge */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
 }
 
-/* Badge (relative + absolute) */
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* Imagen de expositores más pequeña */
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: .75rem;
+}
+
+/* Badge más discreto */
 .badge {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background: #444;
-  color: var(--c-light);
-  font-size: .75rem;
-  padding: .2rem .4rem;
-  border-radius: 999px;
-}
-
-/* Tablas */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: .5rem 0 1rem;
-}
-
-thead th {
-  background: #f3f3f3;
-}
-
-th, td {
-  border: 1px solid var(--c-border);
-  padding: .5rem;
-  text-align: left;
-}
-
-/* Formularios */
-form {
-  display: grid;
-  gap: .75rem;
-  max-width: 520px;
-}
-
-input, select, button {
-  padding: .5rem;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: var(--radius);
-}
-
-input:focus, select:focus {
-  border-color: #888;
-  outline: none;
-}
-
-button[type="submit"] {
+  top: 10px;
+  right: 10px;
   background: var(--c-dark);
-  color: var(--c-light);
-  cursor: pointer;
+  color: #fff;
+  font-size: .7rem;
+  padding: .2rem .5rem;
 }
 
-/* Aside */
-aside {
-  background: var(--c-bg-alt);
-  border: 1px solid #eee;
-  padding: .75rem;
-  border-radius: var(--radius);
-  margin: 1rem 0;
+/* Titulos más claros */
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: .25rem;
 }
 
-/* Pseudo-clases estructurales */
-ul li:first-child {
-  font-weight: bold;
-}
-
-ul li:last-child {
-  color: var(--c-muted);
-}
-
-ul li:nth-child(2n) {
-  background: #f9f9f9;
-}
-
-ul li:not([data-tipo]) {
-  border-left: 2px solid transparent;
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
 }
