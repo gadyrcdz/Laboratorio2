@@ -5,7 +5,7 @@ Sitio web estático sobre el evento tecnológico de alto cilindraje, seguridad y
 ---
 
 ## 🌍 URL pública en Netlify
-👉 [Sitio WEB](https://incomparable-pika-f58c60.netlify.app/)
+👉 [Sitio WEB](https://deploy-preview-1--incomparable-pika-f58c60.netlify.app/)
 
 ---
 
@@ -85,14 +85,6 @@ Sitio web estático sobre el evento tecnológico de alto cilindraje, seguridad y
 
 ---
 
-## 🎨 Características del Diseño
-
-- **Diseño fijo**: Optimizado para pantallas de escritorio
-- **Accesible**: Incluye elementos de accesibilidad (ARIA, skip links, focus visible)
-- **Moderno**: Uso de gradientes, sombras y transiciones
-- **Semántico**: Estructura HTML5 con elementos semánticos apropiados
-
----
 
 ## 📁 Estructura de Archivos
 
