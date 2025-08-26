@@ -1,67 +1,101 @@
-# 🏍️ Super Motos Tech 2025
+# 🏍️ Super Motos Tech 2025 - Documentación CSS
+
 Sitio web estático sobre el evento tecnológico de alto cilindraje, seguridad y rendimiento.
 
 ---
 
-## 1. 🎯 Descripción
-Super Motos Tech 2025 — Evento enfocado en super motos y alto rendimiento.  
-El sitio incluye agenda, expositores, formulario de registro, ubicación y patrocinadores.
+## 🌍 URL pública en Netlify
+👉 [Sitio WEB](https://deploy-preview-1--incomparable-pika-f58c60.netlify.app/)
 
 ---
 
-## 2. 🧩 Estructura Semántica
-- `<header>`: Título del evento, descripción y navegación principal.  
-- `<main>`: Contiene las secciones clave del sitio.  
-- `<section>`: Divide el contenido en bloques temáticos (agenda, expositores, etc.).  
-- `<article>`: Información detallada de cada expositor.  
-- `<form>`: Registro de participantes con campos accesibles.  
-- `<aside>`: Consejos rápidos relacionados con la ubicación.  
-- `<footer>`: Créditos y enlace de retorno al inicio.  
+## 📋 Elementos CSS Aplicados en el Laboratorio
+
+### 1. **Selectores de tipo**
+- **`header`**: Estilos para el encabezado principal
+- **`nav`**: Navegación principal del sitio
+- **`section`**: Secciones de contenido (agenda, expositores, etc.)
+- **`img`**: Imágenes del sitio con bordes y transiciones
+- **`footer`**: Pie de página con fondo oscuro
+
+### 2. **Selectores de clase**
+- **`.btn`**: Botones de navegación y formulario
+- **`.card`**: Tarjetas de expositores y contenido
+- **`.badge`**: Etiquetas VIP en las tarjetas
+- **`.cards-container`**: Contenedores de grid para organizar contenido
+- **`.skip-link`**: Enlace de navegación rápida para accesibilidad
+
+### 3. **Selectores de ID**
+- **`#agenda`**: Sección principal de agenda del evento
+- **`#expositores`**: Sección de expositores con grid layout
+- **`#registro`**: Formulario de registro de participantes
+- **`#ubicacion`**: Información de ubicación del evento
+- **`#patrocinadores`**: Sección de logos de patrocinadores
+
+### 4. **Selectores de atributo**
+- **`a[target="_blank"]`**: Enlaces externos con icono y estilos especiales
+- **`img[alt]`**: Imágenes con texto alternativo y efectos hover
+- **`input[type="email"]`**: Campo de email con gradiente de fondo
+- **`button[type="submit"]`**: Botón de envío del formulario
+
+### 5. **Combinadores**
+- **`nav a + a`**: Espaciado entre enlaces adyacentes en la navegación
+- **`.card p`**: Párrafos dentro de las tarjetas con estilos específicos
+- **`header > nav`**: Navegación directa dentro del header
+- **`.tag ~ .tag`**: Etiquetas hermanas con espaciado
+- **`tbody tr:nth-child(2n)`**: Filas alternas en tablas
+
+### 6. **Pseudo-clases de estado**
+- **`:hover`**: Efectos al pasar el mouse en botones, enlaces e imágenes
+- **`:focus-visible`**: Contorno de enfoque para accesibilidad
+- **`:active`**: Estados activos de botones
+- **`:visited`**: Enlaces visitados
+- **`:focus`**: Estados de enfoque en formularios
+
+### 7. **Pseudo-clases estructurales**
+- **`:first-child`**: Primer elemento de listas con peso bold
+- **`:last-child`**: Último elemento de listas con estilo italic
+- **`:nth-child(2n)`**: Elementos pares con fondo alternado
+- **`:nth-child(2n+1)`**: Elementos impares
+
+### 8. **Especificidad (!important e inline style)**
+- **`.card .badge`**: Uso de `!important` para sobrescribir estilos base
+- **`h2` con `style="margin-bottom:24px;"`**: Estilo inline en título de expositores
+
+### 9. **Box model**
+- **`.card`**: Padding, margin y border para crear tarjetas
+- **`section`**: Márgenes y padding para espaciado entre secciones
+- **`nav a`**: Padding y border para botones de navegación
+- **`form`**: Padding y margin para formularios
+
+### 10. **Overflow**
+- **`.card p`**: Control de overflow en párrafos de tarjetas con `max-height` y `overflow: auto`
+
+### 11. **Flexbox**
+- **`nav ul`**: Navegación principal con `display: flex` para alinear enlaces
+- **`#patrocinadores .cards-container`**: Contenedor de logos con flexbox para centrado
+
+### 12. **Grid**
+- **`#expositores .cards-container`**: Grid layout para organizar tarjetas de expositores
+- **`#patrocinadores .cards-container`**: Grid para logos de patrocinadores
+
+### 13. **Position relative/absolute**
+- **`.badge`**: Posicionamiento absoluto en las tarjetas para etiquetas VIP
+- **`header`**: Posición relativa para el header principal
 
 ---
 
-## 3. 🌍 URL pública en Netlify
-👉 [Sitio WEB](https://incomparable-pika-f58c60.netlify.app/)
 
----
+## 📁 Estructura de Archivos
 
-## 4. ✅ Validación W3C
-En general, el resultado que me generó la validación fue mayormente algo informativo, sin errores.
-![alt text](assets/image-1.png)
-
-Los warnings informativos que me dio fue para realizar el cambio y no utilizar el "(/)" al final ya que el  "(/)" en elementos vacíos (void elements) como "meta", "br", "img", "input" no tiene ningún efecto en HTML5, y a veces puede dar problemas si además se llega a utilizar atributos sin comillas.
-Luego de realizar los cambios que la página recomienda, y volver a realizar el análisis, este es el resultado.
-![alt text](assets/image-2.png)
-
----
-
-## 5. 🌟 Resultados Lighthouse
-![alt text](assets/image.png)
-
----
-
-## 6. ♿ Accesibilidad aplicada
-En el desarrollo se incluyeron medidas para mejorar la accesibilidad:
-
-- **`tabindex`**:  
-  - En la imagen principal (`header > figure > img`) se añadió `tabindex="0"` para permitir que los usuarios de teclado puedan enfocarla y leer su descripción.  
-  - En la foto de un expositor se usó `tabindex="-1"` para evitar que sea parte de la navegación, ya que el contenido ya está explicado en el texto.  
-
-- **Atributos `aria-*`**:  
-  - `aria-label="Navegación principal"` en la `<nav>` para que lectores de pantalla anuncien correctamente la barra de navegación.  
-  - `aria-labelledby="titulo-registro"` en el formulario para que el encabezado del formulario sea leído como referencia del contenido.  
-  - `aria-label="Logos de patrocinadores"` en el contenedor de imágenes de patrocinadores, lo que ayuda a dar contexto del grupo.  
-
-- **Textos alternativos (`alt`)**:  
-  - Todas las imágenes cuentan con descripciones relevantes, como *“Moto de alta cilindrada tomando una curva en pista”* o *“Mapa ilustrativo de la ubicación del evento en San José”*.  
-  - Los logos de patrocinadores incluyen `alt` con el nombre de la marca para no dejar imágenes sin descripción.  
-
-- **Enlaces descriptivos**:  
-  - Se usaron enlaces con texto claro y contexto, por ejemplo *“MotosGP, Competencia: Superbike”* en lugar de un simple “clic aquí”.  
-  - El enlace de navegación rápida *“Ir al contenido principal”* (`.skip-link`) mejora la experiencia de quienes usan teclado o lector de pantalla.  
-
-- **Otros detalles**:  
-  - Se usó `rel="noopener noreferrer"` en enlaces externos para mejorar seguridad y accesibilidad.  
-  - Botón de envío del formulario con `aria-label` para que su propósito sea claro en lectores de pantalla.  
-
----
+```
+├── index.html
+├── styles/
+│   ├── base.css      (Variables CSS y estilos base)
+│   ├── layout.css    (Layout y estructura)
+│   ├── components.css (Componentes reutilizables)
+│   └── overrides.css (Sobrescrituras y ajustes)
+├── assets/
+│   └── (Imágenes del proyecto)
+└── README.md
+```
