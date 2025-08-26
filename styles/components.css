@@ -1,4 +1,3 @@
-/* Botones - MANTIENE TU LÓGICA ORIGINAL */
 .btn {
   border: 1px solid #555;
   border-radius: var(--radius);
@@ -13,7 +12,6 @@
   display: inline-block;
 }
 
-/* Pseudo-clases de estado - REQUISITO DEL LAB */
 .btn:hover {
   background: linear-gradient(135deg, #333 0%, #555 100%);
   transform: translateY(-2px);
@@ -30,7 +28,6 @@
   outline-offset: 2px;
 }
 
-/* Tarjetas mejoradas */
 .card {
   border: 1px solid var(--c-border);
   padding: 1.5rem;
@@ -48,7 +45,6 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Layout específico para cards de expositores */
 #expositores .card {
   display: flex;
   flex-direction: column;
@@ -86,7 +82,6 @@
   line-height: 1.4;
 }
 
-/* Badge posicionado - REQUISITO DEL LAB (relative + absolute) */
 .badge {
   position: absolute;
   top: 12px;
@@ -106,7 +101,6 @@
   transform: rotate(0deg) scale(1.05);
 }
 
-/* Overflow control - REQUISITO DEL LAB */
 .card p {
   max-height: 4.2em;
   overflow: hidden;
@@ -116,7 +110,6 @@
   -webkit-box-orient: vertical;
 }
 
-/* Aside mejorado */
 aside {
   background: linear-gradient(135deg, var(--c-bg-alt) 0%, #f0f0f0 100%);
   border: 1px solid #e0e0e0;
@@ -133,7 +126,6 @@ aside h3 {
   font-size: 1.1rem;
 }
 
-/* Pseudo-clases estructurales - REQUISITO DEL LAB */
 ul li:first-child {
   font-weight: bold;
   color: var(--c-dark);

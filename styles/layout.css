@@ -6,7 +6,7 @@ footer {
   padding: 1rem;
 }
 
-/* Header mejorado */
+
 header {
   background: linear-gradient(135deg, var(--c-dark) 0%, #333 100%);
   color: var(--c-light);
@@ -28,7 +28,6 @@ header p {
   opacity: 0.9;
 }
 
-/* Secciones mejoradas */
 section {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -52,29 +51,24 @@ section h2 {
   padding-bottom: 0.5rem;
 }
 
-/* Descendiente: párrafos dentro de card */
 .card p {
   font-size: 0.95rem;
   color: #333;
   line-height: 1.6;
 }
 
-/* Hijo directo */
 header > nav {
   margin: 1.5rem 0;
 }
 
-/* Adyacente: enlaces en nav */
 nav a + a {
   margin-left: .5rem;
 }
 
-/* Hermanos: tags simuladas */
 .tag ~ .tag {
   margin-left: .25rem;
 }
 
-/* Flex en el nav - MANTIENE TU LÓGICA ORIGINAL */
 nav ul {
   list-style: none;
   display: flex;
@@ -85,7 +79,6 @@ nav ul {
   padding: 0;
 }
 
-/* MANTIENE TU SELECTOR ORIGINAL nav a - por eso funcionan los botones */
 nav a {
   color: #fff;
   padding: .75rem 1.5rem;
@@ -103,7 +96,6 @@ nav a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Grid para expositores - REQUISITO DEL LAB */
 #expositores .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -111,7 +103,6 @@ nav a:hover {
   margin-top: 2rem;
 }
 
-/* Grid para las tarjetas de patrocinadores */
 #patrocinadores .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -133,7 +124,6 @@ nav a:hover {
   transform: scale(1.1);
 }
 
-/* Mejoras para formularios */
 form {
   background: var(--c-bg-alt);
   padding: 2rem;
@@ -171,7 +161,6 @@ button[type="submit"]:hover {
   transform: translateY(-1px);
 }
 
-/* Tablas mejoradas */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -205,7 +194,6 @@ tbody tr:hover {
   transition: background 0.2s ease;
 }
 
-/* Footer mejorado */
 footer {
   background: var(--c-dark);
   color: var(--c-light);
