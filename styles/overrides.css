@@ -3,15 +3,27 @@
   color: yellow !important;
 }
 
-/* Estilos específicos para botones de navegación */
 header nav ul li a.btn,
 header nav a.btn,
 nav ul li a.btn,
-a.btn {
+a.btn,
+header nav ul li a.btn:visited,
+header nav a.btn:visited,
+nav ul li a.btn:visited,
+a.btn:visited,
+header nav ul li a.btn:active,
+header nav a.btn:active,
+nav ul li a.btn:active,
+a.btn:active,
+header nav ul li a.btn:focus,
+header nav a.btn:focus,
+nav ul li a.btn:focus,
+a.btn:focus {
   background: linear-gradient(135deg, #444 0%, #222 100%) !important;
   color: var(--c-light) !important;
   border: 1px solid #555 !important;
   text-decoration: none !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
 }
 
 header nav ul li a.btn:hover,
@@ -23,13 +35,36 @@ a.btn:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
 }
 
-/* Asegurar que no haya estilos que sobrescriban los botones */
-header nav ul li a.btn:visited,
-header nav a.btn:visited,
-nav ul li a.btn:visited,
-a.btn:visited {
+body header nav ul li a.btn,
+body header nav a.btn,
+body nav ul li a.btn,
+body a.btn {
   background: linear-gradient(135deg, #444 0%, #222 100%) !important;
   color: var(--c-light) !important;
+  border: 1px solid #555 !important;
+  text-decoration: none !important;
+}
+
+header nav ul li a[href="#expositores"].btn,
+header nav ul li a[href="#ubicacion"].btn,
+header nav ul li a[href="#agenda"].btn,
+header nav ul li a[href="#registro"].btn,
+header nav ul li a[href="#patrocinadores"].btn {
+  background: linear-gradient(135deg, #444 0%, #222 100%) !important;
+  color: var(--c-light) !important;
+  border: 1px solid #555 !important;
+  text-decoration: none !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+header nav ul li a[href="#expositores"].btn:hover,
+header nav ul li a[href="#ubicacion"].btn:hover,
+header nav ul li a[href="#agenda"].btn:hover,
+header nav ul li a[href="#registro"].btn:hover,
+header nav ul li a[href="#patrocinadores"].btn:hover {
+  background: linear-gradient(135deg, #555 0%, #333 100%) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
 }
 
 .skip-link {
