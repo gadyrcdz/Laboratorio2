@@ -1,19 +1,43 @@
+/* Estructura general */
+header, main, footer {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
 header {
-  background: linear-gradient(135deg, var(--c-dark), var(--c-accent-dark));
-  color: white;
-  border-radius: 0 0 var(--radius) var(--radius);
-  box-shadow: var(--shadow);
+  background: var(--c-dark);
+  color: var(--c-light);
 }
 
 header h1 {
-  font-size: 2rem;
   margin: .5rem 0;
+  font-size: 1.8rem;
 }
 
 section {
-  background: white;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  background: var(--c-light);
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+/* Nav con flex */
+header > nav ul {
+  list-style: none;
+  padding: 0;
+  margin: .5rem 0 1rem;
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+
+/* Adyacente: separación entre enlaces */
+nav a + a {
+  margin-left: .25rem;
 }

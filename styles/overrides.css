@@ -1,15 +1,10 @@
-/* =========================
-   Overrides
-   !important & excepciones
-========================= */
-
 /* Sobrescritura con !important */
 .card .badge {
   background: black !important;
   color: yellow !important;
 }
 
-/* Extra: accesibilidad para skip link */
+/* Skip link accesible */
 .skip-link {
   position: absolute;
   left: -9999px;
