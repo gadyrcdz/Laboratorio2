@@ -4,7 +4,7 @@
   border-radius: var(--radius);
   padding: .35rem .65rem;
   background: var(--c-dark);
-  color: #fff;
+  color: #000000;
   cursor: pointer;
   transition: transform 0.2s;
 }
