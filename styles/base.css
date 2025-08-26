@@ -1,39 +1,29 @@
-/* =========================
-   Base styles
-   Reset + Variables + Box sizing
-========================= */
-
-/* Variables globales */
 :root {
-  --c-accent: #e60023;
-  --c-dark: #111;
-  --c-light: #f3f3f3;
+  --c-accent: #e63946;      
+  --c-accent-dark: #a4161a;  
+  --c-bg: #f8f9fa;           
+  --c-dark: #1d1d1d;         
+  --c-muted: #6c757d;       
   --max-width: 1000px;
-  --radius: 6px;
-}
-
-/* Reset ligero */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  --radius: 8px;
+  --shadow: 0 2px 6px rgba(0,0,0,0.08);
+  --font-heading: 'Segoe UI', Roboto, sans-serif;
 }
 
 body {
   font-family: system-ui, Arial, sans-serif;
-  line-height: 1.5;
-  color: #222;
-  background: #fff;
+  line-height: 1.6;
+  color: var(--c-dark);
+  background: var(--c-bg);
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: var(--radius);
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--c-dark);
+  margin-bottom: .5rem;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+p {
+  color: var(--c-muted);
+  margin-bottom: 1rem;
 }
