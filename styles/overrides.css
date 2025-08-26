@@ -1,10 +1,22 @@
-/* Sobrescritura con !important */
 .card .badge {
   background: black !important;
   color: yellow !important;
 }
 
-/* Skip link accesible */
+header nav .btn,
+nav ul li a.btn,
+a.btn {
+  background: linear-gradient(135deg, #444 0%, #222 100%) !important;
+  color: var(--c-light) !important;
+  border: 1px solid #555 !important;
+}
+
+header nav .btn:hover,
+nav ul li a.btn:hover,
+a.btn:hover {
+  background: linear-gradient(135deg, #555 0%, #333 100%) !important;
+}
+
 .skip-link {
   position: absolute;
   left: -9999px;
