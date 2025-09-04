@@ -35,6 +35,13 @@ section {
   border-radius: var(--radius);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 section:hover {
@@ -104,6 +111,12 @@ nav a:hover {
   margin-top: 2rem;
 }
 
+#expositores .cards-container img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 #patrocinadores .cards-container {
   display: flex;
   justify-content: center;
@@ -114,6 +127,7 @@ nav a:hover {
 
 #patrocinadores .cards-container img {
   max-height: 80px;
+  max-width: 100%;
   width: auto;
   filter: grayscale(100%);
   transition: filter 0.3s ease, transform 0.3s ease;

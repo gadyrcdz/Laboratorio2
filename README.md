@@ -69,7 +69,7 @@ Sitio web estático sobre el evento tecnológico de alto cilindraje, seguridad y
 - **`form`**: Padding y margin para formularios
 
 ### 10. **Overflow**
-- **`.card p`**: Control de overflow en párrafos de tarjetas con `max-height` y `overflow: auto`
+- **`.card p`**: Control de overflow en párrafos de tarjetas con `max-height: 4.2em`, `overflow: hidden` y `text-overflow: ellipsis` - Ejemplo en la tarjeta de Lin Jarvis con texto largo
 
 ### 11. **Flexbox**
 - **`nav ul`**: Navegación principal con `display: flex` para alinear enlaces
