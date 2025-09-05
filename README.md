@@ -83,6 +83,14 @@ Sitio web estático sobre el evento tecnológico de alto cilindraje, seguridad y
 - **`.badge`**: Posicionamiento absoluto en las tarjetas para etiquetas VIP
 - **`header`**: Posición relativa para el header principal
 
+### 14. **Responsive Design (Mobile-First)**
+- **Media Queries**: Breakpoints en 768px (tablet) y 1024px (desktop)
+- **Menú hamburguesa**: `.menu-toggle` con `aria-controls` y `aria-expanded` para móvil
+- **Grid responsive**: Cards con 1 columna (móvil), 2 columnas (tablet), 3 columnas (desktop)
+- **Navegación adaptativa**: Oculto en móvil, visible en tablet/desktop
+- **Tipografía escalable**: Tamaños de fuente que se adaptan al dispositivo
+- **Imágenes responsive**: `max-width: 100%` y `height: auto` para evitar desbordamiento
+
 ---
 
 
