@@ -19,7 +19,10 @@
     <p>Encuentro tech sobre super motos (alto cilindraje), rendimiento y seguridad.</p>
 
     <nav aria-label="Navegación principal">
-      <ul>
+      <button class="menu-toggle" aria-controls="main-menu" aria-expanded="false" aria-label="Abrir menú de navegación">
+        ☰
+      </button>
+      <ul id="main-menu">
         <li><a href="#agenda" class="btn">Agenda</a></li>
         <li><a href="#expositores" class="btn">Expositores</a></li>
         <li><a href="#registro" class="btn">Registro</a></li>
@@ -105,7 +108,7 @@
         <img src="https://img.asmedia.epimg.net/resizer/v2/7OP2B6WTEJNJDOYRWWNAPFJED4.jpg?auth=371395788d12df035446560296a4ec2d580a9f7ea482e5161dc079cf111cb72c&width=1288&height=725&smart=true" alt="Lin Jarvis director general en Yamaha">
         <div>
           <h3>Lin Jarvis — Director General en Yamaha</h3>
-          <p>Fue el director general en Yamaha tras 26 años.</p>
+          <p>Fue el director general en Yamaha tras 26 años de experiencia en el mundo del motociclismo. Durante su extensa carrera, Lin Jarvis ha sido una figura clave en el desarrollo de la tecnología de motocicletas de alto rendimiento, liderando equipos de ingeniería que han revolucionado la industria. Su experiencia abarca desde el diseño de motores de alta cilindrada hasta la implementación de sistemas de seguridad avanzados en pista. Ha trabajado estrechamente con pilotos de élite y ha contribuido significativamente al avance de la electrónica en superbikes, incluyendo sistemas de telemetría, control de tracción y frenado ABS de última generación. Su visión estratégica y conocimiento técnico profundo lo han posicionado como uno de los expertos más respetados en el campo de las motocicletas deportivas de alto cilindraje.</p>
         </div>
         </article>
       </div>
@@ -196,5 +199,38 @@
   <footer>
     <p>&copy; 2025 Super Motos Tech — <a href="#inicio">Volver arriba</a></p>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menu = document.querySelector('#main-menu');
+      
+      if (menuToggle && menu) {
+        menuToggle.addEventListener('click', function() {
+          const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+          
+          menu.classList.toggle('menu-open');
+          
+          menuToggle.setAttribute('aria-expanded', !isExpanded);
+          
+          menuToggle.textContent = isExpanded ? '☰' : '✕';
+          
+          menuToggle.setAttribute('aria-label', isExpanded ? 'Abrir menú de navegación' : 'Cerrar menú de navegación');
+        });
+        
+        const menuLinks = menu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+              menu.classList.remove('menu-open');
+              menuToggle.setAttribute('aria-expanded', 'false');
+              menuToggle.textContent = '☰';
+              menuToggle.setAttribute('aria-label', 'Abrir menú de navegación');
+            }
+          });
+        });
+      }
+    });
+  </script>
 </body>
 </html>

@@ -35,6 +35,13 @@ section {
   border-radius: var(--radius);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 section:hover {
@@ -104,6 +111,12 @@ nav a:hover {
   margin-top: 2rem;
 }
 
+#expositores .cards-container img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 #patrocinadores .cards-container {
   display: flex;
   justify-content: center;
@@ -114,6 +127,7 @@ nav a:hover {
 
 #patrocinadores .cards-container img {
   max-height: 80px;
+  max-width: 100%;
   width: auto;
   filter: grayscale(100%);
   transition: filter 0.3s ease, transform 0.3s ease;
@@ -214,4 +228,236 @@ footer a {
 
 footer a:hover {
   color: var(--c-light);
+}
+
+
+:root {
+  --mobile-max: 480px;
+  --tablet-min: 768px;
+  --desktop-min: 1024px;
+}
+
+
+.menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  color: var(--c-dark);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.menu-toggle:focus-visible {
+  outline: 3px solid var(--c-accent);
+  outline-offset: 2px;
+}
+
+header nav ul {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+header nav ul.menu-open {
+  display: flex;
+}
+
+header nav ul li a.btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  margin: 0.25rem 0;
+}
+
+
+header, main, footer {
+  max-width: 100%;
+  padding: 0.5rem;
+}
+
+section {
+  padding: 1rem 0.5rem;
+  margin-bottom: 1rem;
+}
+
+
+
+#expositores .cards-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+#patrocinadores .cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+
+
+table {
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+th, td {
+  padding: 0.5rem 0.25rem;
+  word-wrap: break-word;
+}
+
+
+form {
+  padding: 1rem;
+  max-width: 100%;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+
+h1 {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  
+  header nav ul li a.btn {
+    display: inline-block;
+    width: auto;
+    padding: 0.75rem 1.5rem;
+    margin: 0;
+  }
+  
+  header, main, footer {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  section {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  #expositores .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  #patrocinadores .cards-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+
+  th, td {
+    padding: 0.75rem;
+  }
+  
+  form {
+    padding: 2rem;
+    max-width: 520px;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+  header, main, footer {
+    padding: 2rem 1rem;
+  }
+  
+  section {
+    padding: 3rem 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  #expositores .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  header nav ul {
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+  
+  header nav ul li a.btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.75rem;
+  }
+  
+  form {
+    max-width: 600px;
+    padding: 3rem;
+  }
+  
+  th, td {
+    padding: 1rem;
+  }
 }
